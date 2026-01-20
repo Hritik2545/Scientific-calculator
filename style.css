@@ -45,4 +45,41 @@ button:hover {
     color: black;
     grid-column: span 1;
 }
+/* For Tablets (Screens smaller than 768px) */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 80%;           /* Widens the container slightly */
+        padding: 15px;
+    }
+    
+    .btn {
+        padding: 15px;       /* Makes buttons easier to tap */
+        font-size: 1.1rem;
+    }
+}
 
+/* For Mobile Phones (Screens smaller than 480px) */
+@media screen and (max-width: 480px) {
+    .container {
+        width: 95%;           /* Uses almost full width of the phone */
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    #display {
+        font-size: 1.5rem;    /* Makes the numbers readable on small screens */
+        height: 50px;
+    }
+
+    .btn {
+        padding: 12px 5px;   /* Adjusted padding for narrower screens */
+        font-size: 1rem;
+        border-radius: 5px;
+    }
+
+    /* If you have a grid for the scientific buttons, 
+       you might want to switch them to fewer columns */
+    .button-row {
+        gap: 5px;             /* Reduces space between buttons */
+    }
+}
